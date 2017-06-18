@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.drowsyatmidnight.flicks.DetailsMovie">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_cover_image_height"
+            android:scaleType="fitXY"
+            tools:src="@drawable/sample2" />
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/circular_border_play_video"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/play" />
+
+        <RelativeLayout
+            android:id="@+id/detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:elevation="4dp"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/txtMovieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:paddingLeft="20dp"
+                tools:text="Wonder Woman"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtReleaseDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMovieName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                tools:text="Release date: 17/06/2017"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_layout"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_marginLeft="20dp"
+                android:rating="5"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar" />
+
+            <TextView
+                android:id="@+id/txtOverview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:paddingLeft="20dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Overview:" />
+
+            <TextView
+                android:id="@+id/txtContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:elevation="4dp"
+                android:paddingLeft="20dp"
+                tools:text="Android Profile UI Design" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widthCardView">400dp</dimen>
+    <dimen name="heightCardView">260dp</dimen>
+    <dimen name="header_cover_image_height">420dp</dimen>
+</resources>

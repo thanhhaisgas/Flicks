@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingLeftText">6dp</dimen>
+    <dimen name="paddingLeftImg">4dp</dimen>
+    <dimen name="paddingTopItem">10dip</dimen>
+    <dimen name="layoutmarginImg">20dp</dimen>
+    <dimen name="widthCardView">260dp</dimen>
+    <dimen name="heightCardView">400dp</dimen>
+    <dimen name="header_cover_image_height">220dp</dimen>
+
+</resources>
