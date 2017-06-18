@@ -28,6 +28,7 @@ The following **bonus** features are implemented:
 * [x] Replaced android-async-http network client with the popular [OkHttp](http://guides.codepath.com/android/Using-OkHttp) networking libraries.
 
 ## Video Walkthrough
+[Link](http://i.imgur.com/6qqPvcF.gif)
 
 Here's a walkthrough of implemented user stories:
 
